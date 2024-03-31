@@ -1,0 +1,7 @@
+.hamburger {
+  transition: transform 0.4s ease;
+}
+
+.hamburger.open {
+  transform: rotate(90deg);
+}
