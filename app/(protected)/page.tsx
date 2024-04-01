@@ -1,8 +1,8 @@
 import About from "@/components/about/about";
 import Contacts from "@/components/contacts/contacts";
 import Home from "@/components/home/home";
+import Partners from "@/components/partners/partners";
 import Services from "@/components/services/services";
-import Slider from "@/components/slider/custom_slider";
 import WhyUs from "@/components/whyus/whyus";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
       <About />
       <WhyUs />
       <Services />
-      <Slider />
+      <Partners />
       <Contacts />
     </div>
   );

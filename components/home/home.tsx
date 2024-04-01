@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <section id="#" className="h-[60rem] bg-black flex flex-col py-4">
+    <section id="#" className="h-[55rem] bg-black flex flex-col py-4">
       <div className="flex h-full items-center justify-center flex-col text-white gap-y-[6rem]">
         <h1 className="text-8xl font-bold">UDC</h1>
         <div className="flex flex-col items-center gap-y-8">
