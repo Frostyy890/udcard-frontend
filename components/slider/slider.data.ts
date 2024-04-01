@@ -3,6 +3,7 @@ import logoAzukar from "../../public/assets/AddText_05-11-05.15.38.jpg";
 import logoAzukarDark from "../../public/assets/image_2021-02-26_19-12-20.png";
 import logoCucucina from "../../public/assets/CuCucina_Logo_Full colour_PNG-01.png";
 import logoTKH from "../../public/assets/logo ™Ѓѓ®п (2).png";
+import logo4 from "../../public/assets/img_3496.png"
 
 export interface SliderSlide {
   imgURL: string | StaticImageData;
