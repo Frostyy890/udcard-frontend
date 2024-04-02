@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Navbar />
-      <div>{children}</div>
+      <div className="w-full">{children}</div>
     </>
   );
 }
