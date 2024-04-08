@@ -26,12 +26,12 @@ const WhyUs = () => {
     {
       icon: <SupportAgentIcon sx={defaultIconSize} />,
       title: "Маркетинговая поддержка",
-      desc: "UD CARD предоставляет обширную маркетинговую поддержку своим партнерам, включая рекламные кампании, социальные сети и пресс-релизы. Мы активно продвигаем предложения наших партнеров, обеспечивая максимальную видимость",
+      desc: "UDCARD предоставляет обширную маркетинговую поддержку своим партнерам, включая рекламные кампании, социальные сети и пресс-релизы. Мы активно продвигаем предложения наших партнеров, обеспечивая максимальную видимость",
     },
   ];
   return (
-    <section id="whyus" className="py-[11.25rem] bg-[#f0f0f0]">
-      <div className="max-w-[1200px] mx-auto text-center">
+    <section id="whyus" className="py-[11.25rem] bg-gray-900">
+      <div className="max-w-[1200px] mx-auto text-center text-gray-100">
         <div className="mb-24 max-w-[560px] mx-auto">
           <h1 className="text-4xl font-bold mb-8">Почему стоит выбрать нас?</h1>
           <p className="text-2xl">

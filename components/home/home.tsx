@@ -1,22 +1,39 @@
+"use client";
 import React from "react";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
+
+import "./home.styles.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const Home = () => {
   return (
-    <section id="#" className="h-[55rem] bg-black flex flex-col py-4">
-      <div className="flex h-full items-center justify-center flex-col text-white gap-y-[6rem]">
-        <h1 className="text-8xl font-bold">UDC</h1>
-        <div className="flex flex-col items-center gap-y-8">
-          <h3 className="font-bold">Первый дисконт сервер для туристов</h3>
-          <p className="text-sm font-light">
-            Уникальный опыт для путешественников
-          </p>
-        </div>
+    <section id="#" className="py-4">
+      <div className="h-[20rem] md:h-[40rem] text-gray-900 px-4">
+        <Swiper
+          pagination={true}
+          navigation={true}
+          modules={[Pagination, Autoplay, Navigation]}
+          loop={true}
+          autoplay={true}
+          className="mySwiper"
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
+          <SwiperSlide>Slide 7</SwiperSlide>
+          <SwiperSlide>Slide 8</SwiperSlide>
+          <SwiperSlide>Slide 9</SwiperSlide>
+        </Swiper>
       </div>
-      <Link href="#about" className="text-center animate-bounce">
-        <ArrowDownwardIcon sx={{ color: "white", fontSize: "3rem" }} />
-      </Link>
+      {/* <Link href="#about" className="text-center animate-bounce">
+        <ArrowDownwardIcon sx={{ color: "gray", fontSize: "3rem" }} />
+      </Link> */}
     </section>
   );
 };

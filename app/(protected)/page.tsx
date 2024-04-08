@@ -1,7 +1,7 @@
 import About from "@/components/about/about";
 import Contacts from "@/components/contacts/contacts";
 import Home from "@/components/home/home";
-import Partners from "@/components/partners/partners";
+import PartnersHome from "@/components/partners/partners.home";
 import Services from "@/components/services/services";
 import WhyUs from "@/components/whyus/whyus";
 
@@ -11,9 +11,9 @@ const App = () => {
     <div className="routes">
       <Home />
       <About />
+      <PartnersHome />
       <WhyUs />
       <Services />
-      <Partners />
       <Contacts />
     </div>
   );

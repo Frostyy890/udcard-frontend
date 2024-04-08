@@ -28,7 +28,7 @@ const Services = () => {
     <section id="services" className="w-full">
       <div className="py-[11.25rem] max-w-[1200px] mx-auto text-center px-4">
         <div className="mb-24 max-w-[560px] mx-auto">
-          <h1 className="text-4xl font-bold mb-10 text-rose-500">
+          <h1 className="text-4xl font-bold mb-10">
             Схема сотрудничества
           </h1>
           <p className="text-left text-sm font-bold">
@@ -40,7 +40,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="py-[11.25rem] bg-[#f0f0f0] px-4">
+      <div className="py-[11.25rem] bg-gray-900 text-gray-100 px-4">
         <div className="max-w-[1200px] text-center mx-auto">
           <h1 className="text-4xl font-bold mb-24">Что вы получите?</h1>
           <div className="items max-w-[760px] mx-auto flex flex-col gap-y-12">

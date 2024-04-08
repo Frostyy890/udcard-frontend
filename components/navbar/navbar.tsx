@@ -12,26 +12,30 @@ interface Section {
 
 const Navbar = () => {
   const sections: Section[] = [
-    { name: "О компании", path: "#about" },
-    { name: "Почему мы?", path: "#whyus" },
-    { name: "Наши сервисы", path: "#services" },
-    { name: "Контакты", path: "#contacts" },
+    { name: "О компании", path: "http://localhost:3000/#about" },
+    { name: "Почему мы?", path: "http://localhost:3000/#whyus" },
+    { name: "Наши сервисы", path: "http://localhost:3000/#services" },
+    { name: "Наши партнеры", path: "http://localhost:3000/#partners" },
+    { name: "Контакты", path: "http://localhost:3000/#contacts" },
   ];
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
   const handleNavOpen = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="fixed top-0 text-white w-full shadow-xl z-[999] bg-black">
+    <nav className="fixed top-0 w-full shadow-xl z-[999] bg-white text-gray-900">
       <div className="flex justify-between h-16 items-center px-8 py-2 2xl:px-16">
-        <Link href="#" className="font-bold uppercase text-xl">
+        <Link
+          href="http://localhost:3000/"
+          className="font-bold uppercase text-xl"
+        >
           UDC
         </Link>
         <ul className="md:flex hidden gap-3">
           {sections.map((section, index) => (
             <li key={index}>
               <Link
-                className=" hover:text-rose-500 duration-[400ms]"
+                className=" hover:text-gray-400 duration-[400ms]"
                 href={section.path}
               >
                 {section.name}
@@ -54,7 +58,7 @@ const Navbar = () => {
       <div
         className={
           isOpen
-            ? "top-16 w-full md:hidden bg-zinc-900 text-white h-screen p-10 ease-in duration-[400ms]"
+            ? "top-16 w-full md:hidden bg-gray-900 text-gray-100 h-screen p-10 ease-in duration-[400ms]"
             : "hidden w-full p-10 ease-in duration-[400ms]"
         }
       >
@@ -63,7 +67,7 @@ const Navbar = () => {
             {sections.map((section, index) => (
               <li onClick={() => setIsOpen(!isOpen)} key={index}>
                 <Link
-                  className=" hover:text-rose-500 duration-[400ms]"
+                  className=" hover:text-gray-400 text-lg duration-[400ms]"
                   href={section.path}
                 >
                   {section.name}
