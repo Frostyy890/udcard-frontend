@@ -12,11 +12,11 @@ interface Section {
 
 const Navbar = () => {
   const sections: Section[] = [
-    { name: "О компании", path: "http://localhost:3000/#about" },
-    { name: "Почему мы?", path: "http://localhost:3000/#whyus" },
-    { name: "Наши сервисы", path: "http://localhost:3000/#services" },
-    { name: "Наши партнеры", path: "http://localhost:3000/#partners" },
-    { name: "Контакты", path: "http://localhost:3000/#contacts" },
+    { name: "О компании", path: "/#about" },
+    { name: "Почему мы?", path: "/#whyus" },
+    { name: "Наши сервисы", path: "/#services" },
+    { name: "Наши партнеры", path: "/#partners" },
+    { name: "Контакты", path: "/#contacts" },
   ];
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
   const handleNavOpen = () => {

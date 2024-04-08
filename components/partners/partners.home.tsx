@@ -22,22 +22,22 @@ const PartnersHome = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Link href="http://localhost:3000/partners">
+            <Link href="/partners">
               Гостинницы / Hotels
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="http://localhost:3000/partners">
+            <Link href="/partners">
               Рестораны / Restaraunts
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="http://localhost:3000/partners">
+            <Link href="/partners">
               Общепит / Public catering
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="http://localhost:3000/partners">Ритэйл / Retail</Link>
+            <Link href="/partners">Ритэйл / Retail</Link>
           </SwiperSlide>
         </Swiper>
       </div>
