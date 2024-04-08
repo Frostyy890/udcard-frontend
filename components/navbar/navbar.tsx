@@ -25,10 +25,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full shadow-xl z-[999] bg-white text-gray-900">
       <div className="flex justify-between h-16 items-center px-8 py-2 2xl:px-16">
-        <Link
-          href="http://localhost:3000/"
-          className="font-bold uppercase text-xl"
-        >
+        <Link href="/" className="font-bold uppercase text-xl">
           UDC
         </Link>
         <ul className="md:flex hidden gap-3">
