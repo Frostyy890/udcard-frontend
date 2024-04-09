@@ -1,7 +1,7 @@
 import About from "@/components/about/about";
 import Contacts from "@/components/contacts/contacts";
 import Home from "@/components/home/home";
-import PartnersHome from "@/components/partners/partners.home";
+import PartnersHome from "@/components/partners/partners.demo";
 import Services from "@/components/services/services";
 import WhyUs from "@/components/whyus/whyus";
 

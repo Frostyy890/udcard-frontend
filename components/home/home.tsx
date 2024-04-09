@@ -2,7 +2,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import { adSliderSlides } from "./adslider.data";
 
+// STYLES
 import "./home.styles.css";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,20 +22,11 @@ const Home = () => {
           autoplay={true}
           className="mySwiper"
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          {adSliderSlides.map((slide, index) => (
+            <SwiperSlide key={index}>{slide}</SwiperSlide>
+          ))}
         </Swiper>
       </div>
-      {/* <Link href="#about" className="text-center animate-bounce">
-        <ArrowDownwardIcon sx={{ color: "gray", fontSize: "3rem" }} />
-      </Link> */}
     </section>
   );
 };

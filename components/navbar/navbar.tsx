@@ -4,20 +4,9 @@ import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import "./navbar.styles.css";
-
-interface Section {
-  name: string;
-  path: string;
-}
+import { sections } from "./navbar.data";
 
 const Navbar = () => {
-  const sections: Section[] = [
-    { name: "О компании", path: "/#about" },
-    { name: "Почему мы?", path: "/#whyus" },
-    { name: "Наши сервисы", path: "/#services" },
-    { name: "Наши партнеры", path: "/#partners" },
-    { name: "Контакты", path: "/#contacts" },
-  ];
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
   const handleNavOpen = () => {
     setIsOpen(!isOpen);
@@ -40,7 +29,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        {/* REPONSIVE */}
+        {/* MOBILE */}
         <div
           className={`md:hidden hamburger ${isOpen ? "open" : ""}`}
           onClick={handleNavOpen}
