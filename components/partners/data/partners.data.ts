@@ -8,7 +8,7 @@ import logo7 from "@/public/assets/IMG_1758.jpg";
 import logo9 from "@/public/assets/IMG_3675.jpg";
 import logo10 from "@/public/assets/IMG_3676.jpg";
 import logo11 from "@/public/assets/IMG_9014.jpg";
-import logo12 from "@/public/assets/IMG_9472.jpg";
+// import logo12 from "@/public/assets/IMG_9472.jpg";
 import logo13 from "@/public/assets/Logo_hd_RED-KISS_Black.jpg";
 // import logo15 from "@/public/assets/The-Rose-logo.jpg";
 import logo17 from "@/public/assets/logo ™Ѓѓ®п (2) (2).jpg";
@@ -130,16 +130,16 @@ export const partnersData: PartnersData = {
       discount: 5,
       categoryId: 5,
     },
-    {
-      id: 8,
-      name: "Divan",
-      img: logo12,
-      description:
-        "Предлагает свои услуги за выгодную цену и гарантирует качество",
-      discount: 10,
-      categoryId: 2,
-      link: "https://www.instagram.com/divan.rest?igsh=MW56eXk3M3h1dDIyeQ==",
-    },
+    // {
+    //   id: 8,
+    //   name: "Divan",
+    //   img: logo12,
+    //   description:
+    //     "Предлагает свои услуги за выгодную цену и гарантирует качество",
+    //   discount: 10,
+    //   categoryId: 2,
+    //   link: "https://www.instagram.com/divan.rest?igsh=MW56eXk3M3h1dDIyeQ==",
+    // },
     {
       id: 9,
       name: "Хорошая девочка",
