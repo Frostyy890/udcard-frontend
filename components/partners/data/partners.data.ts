@@ -10,7 +10,7 @@ import logo10 from "@/public/assets/IMG_3676.jpg";
 import logo11 from "@/public/assets/IMG_9014.jpg";
 import logo12 from "@/public/assets/IMG_9472.jpg";
 import logo13 from "@/public/assets/Logo_hd_RED-KISS_Black.jpg";
-import logo15 from "@/public/assets/The-Rose-logo.jpg";
+// import logo15 from "@/public/assets/The-Rose-logo.jpg";
 import logo17 from "@/public/assets/logo ™Ѓѓ®п (2) (2).jpg";
 import logo19 from "@/public/assets/lotte.jpg";
 
