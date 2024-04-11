@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo1 from "../../../../public/assets/AddText_05-11-05.15.38.jpg";
+import logo1 from "@/public/assets/12345.jpg";
 import Link from "next/link";
 import { Partner } from "../../data/partners.data";
 
@@ -9,14 +9,14 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ cardContent }) => {
-  const { img, name, description, discount } = cardContent;
+  const { img, name, description, discount, link } = cardContent;
   return (
     <div className="bg-white border border-gray-200 shadow mx-auto">
-      <Link href="/link" className="relative">
+      <Link href={link ? link : "/partners"} className="relative h-48">
         <Image
           src={img ? img : logo1}
           alt=""
-          className="h-48 object-cover md:h-60"
+          className="bg-contain h-48 md:h-60"
         />
         {discount !== 0 ? (
           <span className="absolute top-0 right-0 m-2 rounded-full bg-gray-900 p-2 text-center text-sm font-medium text-gray-100">
