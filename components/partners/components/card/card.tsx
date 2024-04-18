@@ -18,11 +18,11 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
           alt=""
           className="bg-contain h-48 md:h-60"
         />
-        {discount !== 0 ? (
+        {discount <= 0 ? undefined : (
           <span className="absolute top-0 right-0 m-2 rounded-full bg-gray-900 p-2 text-center text-sm font-medium text-gray-100">
             {discount}% OFF
           </span>
-        ) : undefined}
+        )}
       </Link>
       <div className="p-5">
         <Link href="#">

@@ -4,7 +4,7 @@ import logo3 from "@/public/assets/1234.jpg";
 import logo4 from "@/public/assets/12345.jpg";
 import logo5 from "@/public/assets/123456.jpg";
 import logo6 from "@/public/assets/CuCucina_Logo_Full colour_PNG-01.png";
-import logo7 from "@/public/assets/IMG_1758.jpg";
+// import logo7 from "@/public/assets/IMG_1758.png";
 import logo9 from "@/public/assets/IMG_3675.jpg";
 import logo10 from "@/public/assets/IMG_3676.jpg";
 import logo11 from "@/public/assets/IMG_9014.jpg";
@@ -13,13 +13,9 @@ import logo13 from "@/public/assets/Logo_hd_RED-KISS_Black.jpg";
 // import logo15 from "@/public/assets/The-Rose-logo.jpg";
 import logo17 from "@/public/assets/logo ™Ѓѓ®п (2) (2).jpg";
 import logo19 from "@/public/assets/lotte.jpg";
-
-interface PartnersData {
-  categories: Category[];
-  partners: Partner[];
-  isCategoryEmpty: (categoryId: number, partners: Partner[]) => boolean;
-  returnSortedPartners: (categoryId: number, partners: Partner[]) => Partner[];
-}
+import logo20 from "@/public/assets/IMG_3957.png";
+import logo21 from "@/public/assets/Скандалистъ_Ташкент_Лого (белый).png";
+import logo22 from "@/public/assets/photo_2024-04-18_10-31-46.png";
 
 interface Category {
   id: number;
@@ -36,9 +32,15 @@ export interface Partner {
   discount: number;
   link?: string;
   categoryId: number;
+  type?: PartnerType;
 }
 
-export const partnersData: PartnersData = {
+export enum PartnerType {
+  discount = "Партнер со скидками",
+  card = "Партнеры с нашими картами",
+}
+
+export const partnersData = {
   categories: [
     {
       id: 1,
@@ -71,6 +73,7 @@ export const partnersData: PartnersData = {
       discount: 0,
       categoryId: 1,
       link: "https://www.instagram.com/wyndham_tashkent?igsh=MTFyaTBwMGdhNTFpaQ==",
+      type: PartnerType.card,
     },
     {
       id: 2,
@@ -81,6 +84,7 @@ export const partnersData: PartnersData = {
       discount: 0,
       categoryId: 1,
       link: "https://www.instagram.com/intercontinental_tashkent?igsh=MXhheGM5ZTdocW5leQ==",
+      type: PartnerType.card,
     },
     {
       id: 3,
@@ -91,17 +95,19 @@ export const partnersData: PartnersData = {
       discount: 5,
       categoryId: 2,
       link: "https://www.instagram.com/cucucina.tashkent?igsh=MXIxOTlvN3o4anUxYQ==",
+      type: PartnerType.discount,
     },
-    {
-      id: 4,
-      name: "Ronni",
-      img: logo7,
-      description:
-        "Предлагает свои услуги за выгодную цену и гарантирует качество",
-      discount: 15,
-      categoryId: 2,
-      link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
-    },
+    // {
+    //   id: 4,
+    //   name: "Ronni",
+    //   img: logo7,
+    //   description:
+    //     "Предлагает свои услуги за выгодную цену и гарантирует качество",
+    //   discount: 15,
+    //   categoryId: 2,
+    //   link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
+    //   type: PartnerType.discount,
+    // },
     {
       id: 5,
       name: "Bootlegger",
@@ -110,6 +116,7 @@ export const partnersData: PartnersData = {
       discount: 5,
       categoryId: 5,
       link: "https://www.instagram.com/bootleggerbar.uz?igsh=MXB2Y2s3cWp0NnFx",
+      type: PartnerType.discount,
     },
     {
       id: 6,
@@ -120,6 +127,7 @@ export const partnersData: PartnersData = {
       discount: 20,
       categoryId: 5,
       link: "https://www.instagram.com/shisha.lounge_bar?igsh=enVweHZ6NGNla3h1",
+      type: PartnerType.discount,
     },
     {
       id: 7,
@@ -129,6 +137,7 @@ export const partnersData: PartnersData = {
         "Предлагает свои услуги за выгодную цену и гарантирует качество",
       discount: 5,
       categoryId: 5,
+      type: PartnerType.discount,
     },
     // {
     //   id: 8,
@@ -149,6 +158,7 @@ export const partnersData: PartnersData = {
       discount: 5,
       categoryId: 2,
       link: "https://www.instagram.com/xdevochka.uz/?igsh=enVzbnAydGM1amZ0",
+      type: PartnerType.discount,
     },
     {
       id: 10,
@@ -159,6 +169,7 @@ export const partnersData: PartnersData = {
       discount: 0,
       categoryId: 1,
       link: "https://www.instagram.com/ramada.tashkent?igsh=ZHB4ZzJvZHY5czAy",
+      type: PartnerType.card,
     },
     // {
     //   id: 11,
@@ -178,6 +189,7 @@ export const partnersData: PartnersData = {
       discount: 0,
       categoryId: 1,
       link: "https://www.instagram.com/grandmirhotel?igsh=bTQ1eThnZ2hmeTB1",
+      type: PartnerType.card,
     },
     {
       id: 13,
@@ -188,6 +200,7 @@ export const partnersData: PartnersData = {
       discount: 5,
       categoryId: 2,
       link: "https://www.instagram.com/tkh.uz/?igsh=Nm5qNXF5ZjI5Mm1w",
+      type: PartnerType.discount,
     },
     {
       id: 14,
@@ -198,15 +211,46 @@ export const partnersData: PartnersData = {
       discount: 0,
       categoryId: 1,
       link: "https://www.instagram.com/lottecityhotel_tashkent?igsh=MTd3bjVwMG9pazR3cA==",
+      type: PartnerType.card,
+    },
+    {
+      id: 15,
+      name: "Velvet",
+      img: logo20,
+      description:
+        "Предлагает свои услуги за выгодную цену и гарантирует качество",
+      discount: 20,
+      categoryId: 2,
+      link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
+      type: PartnerType.discount,
+    },
+    {
+      id: 16,
+      name: "Скандалист",
+      img: logo21,
+      description:
+        "Предлагает свои услуги за выгодную цену и гарантирует качество",
+      discount: 10,
+      categoryId: 2,
+      link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
+      type: PartnerType.discount,
+    },
+    {
+      id: 17,
+      name: "Zeugma",
+      img: logo22,
+      description:
+        "Предлагает свои услуги за выгодную цену и гарантирует качество",
+      discount: 10,
+      categoryId: 2,
+      link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
+      type: PartnerType.discount,
     },
   ],
-  isCategoryEmpty(categoryId, partners) {
-    const partnerInCategory = partners.find(
-      (partner) => partner.categoryId === categoryId
-    );
-    return partnerInCategory ? true : false;
+  isCategoryEmpty(categoryId: number, partners: Partner[]): boolean {
+    return partners.some((partner) => partner.categoryId === categoryId);
   },
-  returnSortedPartners(categoryId, partners) {
+  returnSortedPartners(categoryId: number, partners: Partner[]) {
     const sortedPartners = partners.filter(
       (partner) => partner.categoryId === categoryId
     );

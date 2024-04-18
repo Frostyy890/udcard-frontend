@@ -18,23 +18,23 @@ export const customSliderOptions: SwiperOptions = {
     },
     640: {
       slidesPerView: 2,
-      spaceBetween: 15,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 15,
+      spaceBetween: 10,
     },
     960: {
       slidesPerView: 3,
-      spaceBetween: 25,
+      spaceBetween: 10,
     },
     1296: {
       slidesPerView: 4,
-      spaceBetween: 25,
+      spaceBetween: 10,
     },
     1660: {
       slidesPerView: 5,
-      spaceBetween: 25,
+      spaceBetween: 10,
     },
   },
 };
