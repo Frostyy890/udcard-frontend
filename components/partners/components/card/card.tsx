@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import logo1 from "@/public/assets/12345.jpg";
 import Link from "next/link";
 import { Partner } from "../../data/partners.data";
 
@@ -12,9 +11,9 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
   const { img, name, description, discount, link } = cardContent;
   return (
     <div className="bg-white border border-gray-200 shadow mx-auto">
-      <Link href={link ? link : "/partners"} className="relative h-48">
+      <Link href={link ? link : "/partners"} className="relative h-48 md:h-60">
         <Image
-          src={img ? img : logo1}
+          src={img ? img : ""}
           alt=""
           className="bg-contain h-48 md:h-60"
         />

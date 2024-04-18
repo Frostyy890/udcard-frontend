@@ -1,0 +1,143 @@
+{
+    "Catrgories": {
+        "Restoran": [
+            {
+                "image": "ресторан/tkx",
+                "link": "",
+                "companyName": "Ткх",
+                "companyDescription": "",
+                "discount": "5"               
+            },
+            {
+                "image": "ресторан/CuCucina_Logo_Full.png",
+                "link": "",
+                "companyName": "Кукучина",
+                "companyDescription": "",
+                "discount": "5"               
+            },
+            {
+                "image": "ресторан/KISS_Black-1",
+                "link": "",
+                "companyName": "Хорошая девочка ",
+                "companyDescription": "",
+                "discount": "5"                
+            },
+            {
+                "image": "ресторан/Roni.png",
+                "link": "",
+                "companyName": "Ronni pizza",
+                "companyDescription": "",
+                "discount": "15"               
+            },
+            {
+                "image": "ресторан/ЛОГО_VELVET_ЗОЛОТО_ТЕКСТУРА_НА_З.png",
+                "link": "",
+                "companyName": "Velvet",
+                "companyDescription": "",
+                "discount": "20"               
+            },
+            {
+                "image": "ресторан/Скандалист.png",
+                "link": "",
+                "companyName": "Скандалист",
+                "companyDescription": "",
+                "discount": "10"                
+            },
+            {
+                "image": "ресторан/silk.png",
+                "link": "",
+                "companyName": "SILK 96",
+                "companyDescription": "SILK 96, wine & lounge",
+                "discount": ""               
+            },
+            {
+                "image": "ресторан/Zeugma_Kunefe.png",
+                "link": "",
+                "companyName": "ZEUGMA KÜNEFE",
+                "companyDescription": "",
+                "discount": "10"               
+            }
+        ],
+        "Wear": [
+            {
+                "image": "одежда/Mursak-1.png",
+                "link": "",
+                "companyName": "Мурсак бутик",
+                "companyDescription": "",
+                "discount": "10"              
+            },
+            {
+                "image": "одежда/logo!-1.png",
+                "link": "",
+                "companyName": "7`s 5",
+                "companyDescription": "",
+                "discount": "10"             
+            },
+            {
+                "image": "одежда/Azukar_moreno.png",
+                "link": "",
+                "companyName": "азукар морено",
+                "companyDescription": "",
+                "discount": "5"                
+            },
+            {
+                "image": "одежда/Fauus.png",
+                "link": "",
+                "companyName": "Faus",
+                "companyDescription": "",
+                "discount": "20"              
+            },
+            {
+                "image": "одежда/UYAT_Logo 2.png",
+                "link": "",
+                "companyName": "UYAT",
+                "companyDescription": "",
+                "discount": "5"             
+            },
+            {
+                "image": "одежда/Shadi.png",
+                "link": "",
+                "companyName": "Shadi ",
+                "companyDescription": "",
+                "discount": "20"                
+            },
+            {
+                "image": "одежда/adraschi.png",
+                "link": "",
+                "companyName": "Адрасчи Амаки",
+                "companyDescription": "",
+                "discount": "10"                
+            },
+            {
+                "image": "одежда/ChemodanUZ.png",
+                "link": "",
+                "companyName": "Chemodan Uz",
+                "companyDescription": "",
+                "discount": "10"                
+            }
+        ],
+        "Bar": [
+            {
+                "image": "бар/cmi.png",
+                "link": "",
+                "companyName": "CMI",
+                "companyDescription": "CMI, after party bar",
+                "discount": "10"
+            },
+            {
+                "image": "бар/OneMore.png",
+                "link": "",
+                "companyName": "One More",
+                "companyDescription": "One More, Wonder bar",
+                "discount": "5"
+            },
+            {
+                "image": "бар/shisha.png",
+                "link": "",
+                "companyName": "Shisha",
+                "companyDescription": "",
+                "discount": "20"
+            }
+        ]
+    }
+}
