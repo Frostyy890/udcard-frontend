@@ -29,7 +29,7 @@ import mursakLogo from "@/public/assets/logo_2/одежда/Mursak-1.png";
 // import shadiLogo from "@/public/assets/logo_2/одежда/Shadi.png";
 import uyatLogo from "@/public/assets/logo_2/одежда/UYAT_Logo 2.png";
 import adraschiLogo from "@/public/assets/logo_2/одежда/adraschi.png";
-import someLogo from "@/public/assets/logo_2/одежда/logo!-1.png";
+// import someLogo from "@/public/assets/logo_2/одежда/logo!-1.png";
 
 interface Category {
   id: number;
@@ -207,16 +207,16 @@ export const partnersData: PartnersData = {
       link: "",
       type: PartnerType.discount,
     },
-    {
-      id: 12,
-      name: "7`s 5",
-      img: someLogo,
-      description: "",
-      discount: 10,
-      categoryId: 4,
-      link: "",
-      type: PartnerType.discount,
-    },
+    // {
+    //   id: 12,
+    //   name: "7`s 5",
+    //   img: someLogo,
+    //   description: "",
+    //   discount: 10,
+    //   categoryId: 4,
+    //   link: "",
+    //   type: PartnerType.discount,
+    // },
     {
       id: 13,
       name: "азукар морено",
