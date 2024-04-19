@@ -4,6 +4,7 @@ import Home from "@/components/home/home";
 import PartnersDemo from "@/components/partners/partners.demo";
 import Services from "@/components/services/services";
 import WhyUs from "@/components/whyus/whyus";
+
 const App = () => {
   return (
     // ROUTES

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n";
 import { Partner } from "../../data/partners.data";
 
 interface CardProps {
@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
           className="bg-contain h-48 md:h-60"
         />
         {discount <= 0 ? undefined : (
-          <span className="absolute top-0 right-0 m-2 rounded-full bg-gray-900 p-2 text-center text-sm font-medium text-gray-100">
+          <span className="absolute bottom-0 left-[50%] translate-x-[-50%] m-2 rounded-full bg-pink-800 p-2 text-center text-lg border font-medium text-gray-100">
             {discount}% OFF
           </span>
         )}

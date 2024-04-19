@@ -1,10 +1,9 @@
 "use client";
-import React from "react";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-import Link from "next/link";
+import { Link } from "@/i18n";
 
 const Contacts = () => {
   const defaultIconSize = {

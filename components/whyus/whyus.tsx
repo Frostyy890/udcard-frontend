@@ -4,7 +4,7 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 
-export interface Card {
+export interface descCard {
   icon: React.ReactNode;
   title: string;
   desc: string;
@@ -12,7 +12,7 @@ export interface Card {
 
 const WhyUs = () => {
   const defaultIconSize = { fontSize: "5rem" };
-  const cards: Card[] = [
+  const cards: descCard[] = [
     {
       icon: <TrendingUpIcon sx={defaultIconSize} />,
       title: "Увеличение продаж и узнаваемости",
