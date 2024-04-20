@@ -3,7 +3,7 @@ interface Section {
   path: string;
 }
 
-export const translateSectionsTo = function (locale: string): Section[] {
+export const translateSectionsToRu = function (locale: string): Section[] {
   if (locale === "ru") {
     return sectionsRU;
   }

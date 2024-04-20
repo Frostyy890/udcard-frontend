@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
+import { Partner } from "../../data/partners.data";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { customSliderOptions } from "../../data/slider.options";
 import Card from "../card/card";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Partner } from "../../data/partners.data";
+import { customSliderOptions } from "../../data/slider.options";
 
 interface PartnersSliderProps {
   partners: Partner[];

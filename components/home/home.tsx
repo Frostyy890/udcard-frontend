@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { adSliderSlides } from "./adslider.data";
 
-
 // STYLES
 import "./home.styles.css";
 import "swiper/css";

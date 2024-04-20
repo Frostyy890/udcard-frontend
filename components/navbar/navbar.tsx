@@ -1,9 +1,9 @@
 "use client";
-import { Link, usePathname } from "@/i18n";
+import { Link } from "@/i18n";
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { translateSectionsTo } from "./navbar.data";
+import { translateSectionsToRu } from "./navbar.data";
 import "./navbar.styles.css";
 import LangPicker from "./lang-picker";
 import { useLocale } from "next-intl";
@@ -14,8 +14,8 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   //TRANSLATION
-  const locale = useLocale();
-  const NavLinks = translateSectionsTo(locale);
+  const currentLocale = useLocale();
+  const NavLinks = translateSectionsToRu(currentLocale);
 
   return (
     <nav className="fixed top-0 w-full shadow-xl z-[999] bg-white text-gray-900">

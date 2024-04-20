@@ -2,13 +2,14 @@
 import React from "react";
 import LanguageIcon from "@mui/icons-material/Language";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Link, usePathname } from "@/i18n";
+import { Link, locales, usePathname } from "@/i18n";
 import { useLocale } from "next-intl";
+import { useClickOutside } from "@/hooks/useClickOutside";
 
 const LangPicker = () => {
   const pathname = usePathname();
   const currentlocale = useLocale();
-  const languages = ["RU", "EN"];
+  const languages: string[] = locales.map((loc) => loc.toUpperCase());
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
   const selectedOption = currentlocale.toUpperCase();
   const nonSelectedOptions = languages.filter(
@@ -17,24 +18,11 @@ const LangPicker = () => {
   const handleClick = () => {
     setIsOpen((prev) => !prev);
   };
-  const LANGUAGE_SELECTOR_ID = "language-selector";
-  React.useEffect(() => {
-    const handleWindowClick = (event: any) => {
-      const target = event.target.closest("button");
-      if (target && target.id === LANGUAGE_SELECTOR_ID) {
-        return;
-      }
-      setIsOpen(false);
-    };
-    window.addEventListener("click", handleWindowClick);
-    return () => {
-      window.removeEventListener("click", handleWindowClick);
-    };
-  }, []);
+  const ref = useClickOutside(() => setIsOpen(false));
   return (
-    <div className="relative rounded-md">
+    <div className="relative rounded-md" ref={ref}>
       <div className="inline-flex items-center">
-        <button onClick={handleClick} id={LANGUAGE_SELECTOR_ID}>
+        <button onClick={handleClick}>
           <ExpandMoreIcon
             className={`transform transition duration-500 ${
               isOpen ? "rotate-180" : ""

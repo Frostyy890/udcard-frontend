@@ -30,12 +30,13 @@ import mursakLogo from "@/public/assets/logo_2/одежда/Mursak-1.png";
 import uyatLogo from "@/public/assets/logo_2/одежда/UYAT_Logo 2.png";
 import adraschiLogo from "@/public/assets/logo_2/одежда/adraschi.png";
 // import someLogo from "@/public/assets/logo_2/одежда/logo!-1.png";
+import retailLogo from "@/public/assets/IMG_4005.png";
 
 interface Category {
   id: number;
   name: string;
   path?: string;
-  img?: string;
+  img?: string | StaticImageData;
 }
 
 export interface Partner {
@@ -76,7 +77,12 @@ export const partnersData: PartnersData = {
       img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/30/54/b2/bidri-ambience.jpg?w=1200&h=-1&s=1",
     },
     // { id: 3, name: "Общепит / Public Catering", path: "catering" },
-    { id: 4, name: "Ритэйл / Retail", path: "retail" },
+    {
+      id: 4,
+      name: "Ритэйл / Retail",
+      path: "retail",
+      img: "https://thisisthegreat.com/cdn/shop/files/Desktop_Soho_2.jpg?v=1703102331&width=3840",
+    },
     {
       id: 5,
       name: "Бары / Bars",
@@ -145,18 +151,8 @@ export const partnersData: PartnersData = {
       link: "",
       type: PartnerType.discount,
     },
-    // {
-    //   id: 7,
-    //   name: "Ronni pizza",
-    //   img: ronniLogo,
-    //   description: "",
-    //   discount: 15,
-    //   categoryId: 2,
-    //   link: "",
-    //   type: PartnerType.discount,
-    // },
     {
-      id: 8,
+      id: 7,
       name: "Velvet",
       img: velvetLogo,
       description: "",
@@ -166,7 +162,7 @@ export const partnersData: PartnersData = {
       type: PartnerType.discount,
     },
     {
-      id: 9,
+      id: 8,
       name: "Скандалист",
       img: scandalLogo,
       description: "",
@@ -175,18 +171,8 @@ export const partnersData: PartnersData = {
       link: "",
       type: PartnerType.discount,
     },
-    // {
-    //   id: 10,
-    //   name: "SILK 96",
-    //   img: silkLogo,
-    //   description: "SILK 96, wine & lounge",
-    //   discount: 0,
-    //   categoryId: 2,
-    //   link: "",
-    //   type: PartnerType.discount,
-    // },
     {
-      id: 10,
+      id: 9,
       name: "ZEUGMA KÜNEFE",
       img: zeugmaLogo,
       description: "",
@@ -198,7 +184,7 @@ export const partnersData: PartnersData = {
 
     // RETAIL
     {
-      id: 11,
+      id: 10,
       name: "Мурсак бутик",
       img: mursakLogo,
       description: "",
@@ -207,18 +193,9 @@ export const partnersData: PartnersData = {
       link: "",
       type: PartnerType.discount,
     },
-    // {
-    //   id: 12,
-    //   name: "7`s 5",
-    //   img: someLogo,
-    //   description: "",
-    //   discount: 10,
-    //   categoryId: 4,
-    //   link: "",
-    //   type: PartnerType.discount,
-    // },
+
     {
-      id: 13,
+      id: 11,
       name: "азукар морено",
       img: azukarLogo,
       description: "",
@@ -228,7 +205,7 @@ export const partnersData: PartnersData = {
       type: PartnerType.discount,
     },
     {
-      id: 14,
+      id: 12,
       name: "Faus",
       img: fauusLogo,
       description: "",
@@ -238,7 +215,7 @@ export const partnersData: PartnersData = {
       type: PartnerType.discount,
     },
     {
-      id: 15,
+      id: 13,
       name: "UYAT",
       img: uyatLogo,
       description: "",
@@ -247,18 +224,8 @@ export const partnersData: PartnersData = {
       link: "",
       type: PartnerType.discount,
     },
-    // {
-    //   id: 16,
-    //   name: "Shadi",
-    //   img: shadiLogo,
-    //   description: "",
-    //   discount: 20,
-    //   categoryId: 4,
-    //   link: "",
-    //   type: PartnerType.discount,
-    // },
     {
-      id: 17,
+      id: 14,
       name: "Адрасчи Амаки",
       img: adraschiLogo,
       description: "",
@@ -268,7 +235,7 @@ export const partnersData: PartnersData = {
       type: PartnerType.discount,
     },
     {
-      id: 18,
+      id: 15,
       name: "Chemodan Uz",
       img: chemodanLogo,
       description: "",
@@ -279,7 +246,7 @@ export const partnersData: PartnersData = {
     },
     //HOTELS
     {
-      id: 19,
+      id: 16,
       name: "Wyndham Hotel Group",
       img: wyndhamLogo,
       description: "",
@@ -290,7 +257,7 @@ export const partnersData: PartnersData = {
     },
 
     {
-      id: 20,
+      id: 17,
       name: "Intercontinental",
       img: intercontinentalLogo,
       description: "",
@@ -300,7 +267,7 @@ export const partnersData: PartnersData = {
       type: PartnerType.card,
     },
     {
-      id: 21,
+      id: 18,
       name: "Ramada Hotel",
       img: ramadaLogo,
       description: "",
@@ -310,7 +277,7 @@ export const partnersData: PartnersData = {
       type: PartnerType.card,
     },
     {
-      id: 22,
+      id: 19,
       name: "Grand Mir Hotel",
       img: grandmirLogo,
       description: "",
@@ -320,7 +287,7 @@ export const partnersData: PartnersData = {
       type: PartnerType.card,
     },
     {
-      id: 23,
+      id: 20,
       name: "Lotte",
       img: lotteLogo,
       description: "",
@@ -330,27 +297,45 @@ export const partnersData: PartnersData = {
       type: PartnerType.card,
     },
     // {
-    //   id: 3,
-    //   name: "Cucucina",
-    //   img: logo6,
-    //   description:
-    //     "Предлагает свои услуги за выгодную цену и гарантирует качество",
-    //   discount: 5,
+    //   id: 7,
+    //   name: "Ronni pizza",
+    //   img: ronniLogo,
+    //   description: "",
+    //   discount: 15,
     //   categoryId: 2,
-    //   link: "https://www.instagram.com/cucucina.tashkent?igsh=MXIxOTlvN3o4anUxYQ==",
+    //   link: "",
     //   type: PartnerType.discount,
     // },
-    // // {
-    // //   id: 4,
-    // //   name: "Ronni",
-    // //   img: logo7,
-    // //   description:
-    // //     "Предлагает свои услуги за выгодную цену и гарантирует качество",
-    // //   discount: 15,
-    // //   categoryId: 2,
-    // //   link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
-    // //   type: PartnerType.discount,
-    // // },
+    // {
+    //   id: 10,
+    //   name: "SILK 96",
+    //   img: silkLogo,
+    //   description: "SILK 96, wine & lounge",
+    //   discount: 0,
+    //   categoryId: 2,
+    //   link: "",
+    //   type: PartnerType.discount,
+    // },
+    // {
+    //   id: 16,
+    //   name: "Shadi",
+    //   img: shadiLogo,
+    //   description: "",
+    //   discount: 20,
+    //   categoryId: 4,
+    //   link: "",
+    //   type: PartnerType.discount,
+    // },
+    // {
+    //   id: 12,
+    //   name: "7`s 5",
+    //   img: someLogo,
+    //   description: "",
+    //   discount: 10,
+    //   categoryId: 4,
+    //   link: "",
+    //   type: PartnerType.discount,
+    // },
     // {
     //   id: 5,
     //   name: "Bootlegger",
@@ -382,51 +367,6 @@ export const partnersData: PartnersData = {
     // //   discount: 0,
     // //   categoryId: 2,
     // // },
-    // {
-    //   id: 13,
-    //   name: "Takahuli",
-    //   img: logo17,
-    //   description:
-    //     "Предлагает свои услуги за выгодную цену и гарантирует качество",
-    //   discount: 5,
-    //   categoryId: 2,
-    //   link: "https://www.instagram.com/tkh.uz/?igsh=Nm5qNXF5ZjI5Mm1w",
-    //   type: PartnerType.discount,
-    // },
-
-    // {
-    //   id: 15,
-    //   name: "Velvet",
-    //   img: logo20,
-    //   description:
-    //     "Предлагает свои услуги за выгодную цену и гарантирует качество",
-    //   discount: 20,
-    //   categoryId: 2,
-    //   link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
-    //   type: PartnerType.discount,
-    // },
-    // {
-    //   id: 16,
-    //   name: "Скандалист",
-    //   img: logo21,
-    //   description:
-    //     "Предлагает свои услуги за выгодную цену и гарантирует качество",
-    //   discount: 10,
-    //   categoryId: 2,
-    //   link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
-    //   type: PartnerType.discount,
-    // },
-    // {
-    //   id: 17,
-    //   name: "Zeugma",
-    //   img: logo22,
-    //   description:
-    //     "Предлагает свои услуги за выгодную цену и гарантирует качество",
-    //   discount: 10,
-    //   categoryId: 2,
-    //   link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
-    //   type: PartnerType.discount,
-    // },
   ],
   isCategoryEmpty(categoryId: number, partners: Partner[]): boolean {
     return partners.some((partner) => partner.categoryId === categoryId);

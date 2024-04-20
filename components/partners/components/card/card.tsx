@@ -10,20 +10,22 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ cardContent }) => {
   const { img, name, description, discount, link } = cardContent;
   return (
-    <div className="bg-white border border-gray-200 shadow mx-auto">
-      <Link href={link ? link : "/partners"} className="relative h-48 md:h-60">
-        <Image
-          src={img ? img : ""}
-          alt=""
-          className="bg-contain h-48 md:h-60"
-        />
-        {discount <= 0 ? undefined : (
-          <span className="absolute bottom-0 left-[50%] translate-x-[-50%] m-2 rounded-full bg-pink-800 p-2 text-center text-lg border font-medium text-gray-100">
-            {discount}% OFF
-          </span>
-        )}
+    <div className="bg-white border border-gray-200 shadow mx-auto overflow-hidden">
+      <Link href={link ? link : "/partners"}>
+        <div className="h-48 md:h-60 relative">
+          <Image
+            src={img ? img : ""}
+            alt=""
+            className="bg-cover h-full w-full"
+          />
+        </div>
       </Link>
       <div className="p-5">
+        {discount <= 0 ? undefined : (
+          <div className="mb-2 w-full bg-red-800 py-1 rounded-md text-center text-lg border font-medium text-gray-100">
+            Discount {discount}% OFF
+          </div>
+        )}
         <Link href="#">
           <h5 className="mb-2 md:text-xl text-lg font-bold tracking-tight">
             {name}
@@ -32,12 +34,13 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
         <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400 truncate">
           {description}
         </p>
-        <Link
-          href="/link"
-          className="inline-flex w-full text-sm font-light items-center justify-end text-center"
-        >
-          Узнать больше
-          <ArrowLeftIcon />
+        <Link href="/link">
+          <div className="flex text-sm font-light items-center justify-end pb-2">
+            Узнать больше
+            <span>
+              <ArrowLeftIcon />
+            </span>
+          </div>
         </Link>
       </div>
     </div>
