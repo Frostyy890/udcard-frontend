@@ -2,39 +2,32 @@ import { SwiperOptions } from "swiper/types";
 
 export const customSliderOptions: SwiperOptions = {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 15,
   loop: true,
   autoplay: true,
   navigation: true,
-  pagination: { clickable: true },
+  pagination: { clickable: true, dynamicBullets: true },
   breakpoints: {
-    375: {
+    320: {
       slidesPerView: 1,
-      spaceBetween: 10,
     },
-    430: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+    520: {
+      slidesPerView: 2,
     },
     640: {
       slidesPerView: 2,
-      spaceBetween: 10,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 10,
     },
     960: {
       slidesPerView: 3,
-      spaceBetween: 10,
     },
     1296: {
       slidesPerView: 4,
-      spaceBetween: 10,
     },
     1660: {
       slidesPerView: 5,
-      spaceBetween: 10,
     },
   },
 };

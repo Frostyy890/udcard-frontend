@@ -15,7 +15,7 @@ const Home = () => {
     <section id="#" className="py-4">
       <div className="h-[20rem] md:h-[40rem] text-gray-900 px-4">
         <Swiper
-          pagination={true}
+          pagination={{ clickable: true, dynamicBullets: true }}
           navigation={true}
           modules={[Pagination, Autoplay, Navigation]}
           loop={true}

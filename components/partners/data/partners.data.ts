@@ -330,7 +330,7 @@ export const partnersData: PartnersData = {
     //HOTELS
     {
       id: 17,
-      name: "Wyndham Hotel Group",
+      name: "Wyndham",
       img: wyndhamLogo,
       description: "",
       discount: 0,

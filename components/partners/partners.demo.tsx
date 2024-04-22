@@ -17,9 +17,9 @@ const PartnersDemo = () => {
       <h1 className="md:text-4xl text-2xl font-bold text-center md:py-6 py-2">
         {t("header")}
       </h1>
-      <div className="h-[20rem] md:h-[40rem] text-gray-900 px-4">
+      <div className="h-[20rem] md:h-[40rem] px-4">
         <Swiper
-          pagination={true}
+          pagination={{ clickable: true, dynamicBullets: true }}
           navigation={true}
           modules={[Pagination, Autoplay, Navigation]}
           loop={true}

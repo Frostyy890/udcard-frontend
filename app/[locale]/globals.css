@@ -31,3 +31,29 @@ body {
     color-stop(0.86, rgb(17, 24, 39))
   );
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+  height: 40px !important;
+  width: 40px !important;
+  background: rgb(17, 24, 39) !important;
+  border-radius: 50% !important;
+  border: 1px solid #fff !important;
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before,
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(17, 24, 39) !important;
+}

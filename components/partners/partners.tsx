@@ -15,7 +15,7 @@ const Partners = () => {
   const t = useTranslations("Second_Page");
   return (
     <section>
-      <h1 className="md:text-4xl text-2xl font-bold text-center md:py-6 pt-2">
+      <h1 className="md:text-4xl text-2xl font-bold text-center md:py-6 pt-6 px-2">
         {t("FirstBlock.header")}
       </h1>
       {categories.map((category) =>
@@ -24,7 +24,7 @@ const Partners = () => {
             <p className="md:text-3xl text-xl font-bold text-center py-8">
               {category.name}
             </p>
-            <div className="w-full">
+            <div className="max-w-[1920px] mx-auto">
               <PartnersSLider
                 partners={returnSortedPartners(category.id, partnersTypeCard)}
               />
@@ -32,7 +32,7 @@ const Partners = () => {
           </div>
         ) : undefined
       )}
-      <h1 className="md:text-4xl text-2xl font-bold text-center md:py-6 pt-2">
+      <h1 className="md:text-4xl text-2xl font-bold text-center md:py-6 pt-6 px-2">
         {t("SecondBlock.header")}
       </h1>
       {categories.map((category) =>
