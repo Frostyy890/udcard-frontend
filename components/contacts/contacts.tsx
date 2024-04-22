@@ -18,7 +18,12 @@ const Contacts = () => {
           Tashkent. Labzak 2A
         </p>
         <div className="social flex gap-x-3 justify-center">
-          <Link href="#facebook">
+          <Link
+            href=""
+            onClick={() => {
+              window.alert("Coming soon...");
+            }}
+          >
             <FacebookOutlinedIcon sx={defaultIconSize} />
           </Link>
           <Link
@@ -27,10 +32,15 @@ const Contacts = () => {
           >
             <InstagramIcon sx={defaultIconSize} />
           </Link>
-          <Link href="#telegram">
+          <Link
+            href=""
+            onClick={() => {
+              window.alert("Coming soon...");
+            }}
+          >
             <TelegramIcon sx={defaultIconSize} />
           </Link>
-          <Link href="#998946739999">
+          <Link href="tel:+998946739999">
             <PhoneInTalkIcon sx={defaultIconSize} />
           </Link>
         </div>

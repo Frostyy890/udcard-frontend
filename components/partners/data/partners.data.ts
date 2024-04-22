@@ -10,7 +10,7 @@ import intercontinentalLogo from "@/public/assets/logo_2/отель/12345.jpg";
 // BARS
 import cmiLogo from "@/public/assets/logo_2/бар/cmi.png";
 import shishaLogo from "@/public/assets/IMG_3676.jpg";
-import onemoreLogo from "@/public/assets/IMG_9014.jpg";
+import onemoreLogo from "@/public/assets/logo_2/бар/image_2024-04-22_22-10-35.png";
 import scandalLogo from "@/public/assets/logo_2/бар/Скандалистъ_Ташкент_Лого_черный.png";
 import bootlegerLogo from "@/public/assets/logo_2/бар/Bootleger_Logo.png";
 
@@ -18,23 +18,23 @@ import bootlegerLogo from "@/public/assets/logo_2/бар/Bootleger_Logo.png";
 import tkxLogo from "@/public/assets/logo_2/ресторан/tkx.png";
 import kissLogo from "@/public/assets/logo_2/ресторан/Logo_hd_RED.png";
 import cucucinaLogo from "@/public/assets/CuCucina_Logo_Full.png";
-import ronniLogo from "@/public/assets/logo_2/ресторан/image_2024-04-22_17-59-57.png";
+import ronniLogo from "@/public/assets/logo_2/ресторан/image_2024-04-22_21-19-39.png";
 import zeugmaLogo from "@/public/assets/logo_2/ресторан/Zeugma_Kunefe.png";
 import velvetLogo from "@/public/assets/logo_2/ресторан/ЛОГО_VELVET_ЗОЛОТО_ТЕКСТУРА_НА_З.png";
 import silkLogo from "@/public/assets/logo_2/ресторан/image_2024-04-22_17-59-30.png";
 import theRoseLogo from "@/public/assets/logo_2/ресторан/The-Rose-logo.png";
 import divanLogo from "@/public/assets/logo_2/ресторан/Divan_Logo.png";
+import ronni2Logo from "@/public/assets/logo_2/ресторан/Ronni.png";
 
 //RETAIL
 import azukarLogo from "@/public/assets/logo_2/одежда/Azukar_moreno.jpg";
 import chemodanLogo from "@/public/assets/logo_2/одежда/ChemodanUZ.png";
 import fauusLogo from "@/public/assets/logo_2/одежда/Fauus.png";
 import mursakLogo from "@/public/assets/logo_2/одежда/Mursak-1.png";
-import shadiLogo from "@/public/assets/logo_2/одежда/image_2024-04-22_17-58-42.png";
+import shadiLogo from "@/public/assets/logo_2/одежда/image_2024-04-22_21-37-44.png";
 import uyatLogo from "@/public/assets/logo_2/одежда/image_2024-04-22_17-54-32.png";
 import adraschiLogo from "@/public/assets/logo_2/одежда/adraschi.png";
-import sevenSFiveLogo from "@/public/assets/logo_2/одежда/image_2024-04-22_17-55-51.png";
-import { getTranslations } from "next-intl/server";
+import sevenSFiveLogo from "@/public/assets/logo_2/одежда/7`s5.png";
 // import retailLogo from "@/public/assets/IMG_4005.png";
 
 interface Category {
@@ -93,6 +93,12 @@ export const partnersData: PartnersData = {
       name: "Бары / Bars",
       path: "bars",
       img: "https://www.foodandwine.com/thmb/8rtGtUmtC0KiJCDxAUXP_cfwgM8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GTM-Best-US-Bars-Katana-Kitten-FT-BLOG0423-fa9f2ba9925c47abb4afb0abd25d915a.jpg",
+    },
+    {
+      id: 6,
+      name: "Цветы / Flowers",
+      path: "flowers",
+      img: "https://mspmag.com/downloads/61859/download/image002.jpg?cb=de465bc50a9e5635ec2a607d7d4f453c&w=1280",
     },
   ],
   partners: [
@@ -198,10 +204,20 @@ export const partnersData: PartnersData = {
       link: "https://www.instagram.com/zeugmakunefe.uz?igsh=MWJ6em5ybnJ1d2N0aQ==",
       type: PartnerType.discount,
     },
+    // {
+    //   id: 22,
+    //   name: "Ronni pizza",
+    //   img: ronniLogo,
+    //   description: "",
+    //   discount: 15,
+    //   categoryId: 2,
+    //   link: "https://www.instagram.com/ronipizzauz?igsh=MWQ1bXlmM3E3ZHBucg==",
+    //   type: PartnerType.discount,
+    // },
     {
-      id: 22,
+      id: 27,
       name: "Ronni pizza",
-      img: ronniLogo,
+      img: ronni2Logo,
       description: "",
       discount: 15,
       categoryId: 2,
@@ -213,10 +229,10 @@ export const partnersData: PartnersData = {
       name: "SILK 96",
       img: silkLogo,
       description: "",
-      discount: 0,
+      discount: 10,
       categoryId: 2,
       link: "https://www.instagram.com/silk96wine?igsh=YzZ2NTE4MnUydjlv",
-      type: PartnerType.card,
+      type: PartnerType.discount,
     },
     {
       id: 26,
@@ -227,16 +243,6 @@ export const partnersData: PartnersData = {
       categoryId: 2,
       link: "https://www.instagram.com/divan.rest?igsh=MW56eXk3M3h1dDIyeQ==",
       type: PartnerType.discount,
-    },
-    {
-      id: 27,
-      name: "The Rose",
-      img: theRoseLogo,
-      description: "",
-      discount: 0,
-      categoryId: 2,
-      link: "https://www.instagram.com/therose.tashkent?igsh=OTFjMHZ5aHJod2N2",
-      type: PartnerType.card,
     },
 
     // RETAIL
@@ -372,6 +378,17 @@ export const partnersData: PartnersData = {
       categoryId: 1,
       link: "https://www.instagram.com/lottecityhotel_tashkent?igsh=MTd3bjVwMG9pazR3cA==",
       type: PartnerType.card,
+    },
+    // FLOWERS
+    {
+      id: 27,
+      name: "The Rose",
+      img: theRoseLogo,
+      description: "",
+      discount: 20,
+      categoryId: 6,
+      link: "https://www.instagram.com/therose.tashkent?igsh=OTFjMHZ5aHJod2N2",
+      type: PartnerType.discount,
     },
   ],
   isCategoryEmpty(categoryId: number, partners: Partner[]): boolean {
