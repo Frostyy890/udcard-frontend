@@ -7,13 +7,15 @@ import { partnersData } from "./data/partners.data";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useTranslations } from "next-intl";
 
 const PartnersDemo = () => {
+  const t = useTranslations("First_Page.Partners");
   const { categories } = partnersData;
   return (
     <section id="partners" className="py-4">
       <h1 className="md:text-4xl text-2xl font-bold text-center md:py-6 py-2">
-        Наши партнеры:
+        {t("header")}
       </h1>
       <div className="h-[20rem] md:h-[40rem] text-gray-900 px-4">
         <Swiper

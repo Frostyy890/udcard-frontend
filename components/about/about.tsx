@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 const About = () => {
-  const t = useTranslations("About");
+  const t = useTranslations("First_Page.About");
   return (
     <section id="about" className="py-[6rem] px-4">
       <div className="max-w-[1200px] mx-auto text-center text-gray-900">

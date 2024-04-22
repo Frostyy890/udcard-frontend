@@ -1,16 +1,41 @@
 {
-  "About": {
-    "header": "About us",
-    "body": "Our objective is to ensure a unique experience for travelers by granting them access to exclusive discounts and privileges offered by our partners across various industries"
+  "First_Page": {
+    "About": {
+      "header": "About us",
+      "body": "Our objective is to ensure a unique experience for travelers by granting them access to exclusive discounts and privileges offered by our partners across various industries"
+    },
+    "Partners": {
+      "header": "Our partners"
+    },
+    "Why_us": {
+      "header": "Why us?",
+      "body": "Our specialists will be happy to share their expertise based on knowledge of what is currently working on the market.",
+      "first_block_header": "Increasing sales and awareness",
+      "first_block": "Your business will receive additional sales by participating in our program. Tourists who have our card are actively looking for offers and discounts, which helps increase your turnover.",
+      "second_block_header": "Flexible terms of cooperation",
+      "second_block": "We value the uniqueness of each business. UDC offers flexible terms of cooperation, allowing our partners to choose the best cooperation options that suit their needs and strategy.",
+      "third_block_header": "Marketing Support",
+      "third_block": "UDCARD provides extensive marketing support to its partners, including advertising campaigns, social media and press releases. We actively promote our partners' offers, ensuring maximum visibility"
+    },
+    "Scheme": {
+      "header": "Collaboration scheme",
+      "body": "UDC company: places information about you on the website, develops packaging and instructions for a gift certificate, finds a client, sells a certificate valid for 1 month and transfers you the agreed amount you: Receive money and serve the client at the agreed time"
+    },
+    "Services": {
+      "header": "What will you get?",
+      "desc": "Increasing clients among new tourists who fly to our country and attracting relocants who live here",
+      "titleSavings": "Time and money savings",
+      "descSavings": "Our specialists help your brand with advertising for foreigners. You do not spend extra money for this.",
+      "titleEffective": "Business efficiency feedback",
+      "descEffective": "We help you get the most out of your business. Our specialists will help you identify areas that are of interest to your potential buyers, and together with you will develop a plan to attract more buyers."
+    }
   },
-  "Services": {
-    "headerScheme": "Collaboration scheme",
-    "bodyScheme": "Компания UDC: размещает информацию о вас на сайте, разрабатывает упаковку и инструкцию для подарочного сертификата, находит клиента, продает сертификат сроком действия 1 месяц и переводит вам оговоренную сумму вы: Получаете деньги и обслуживаете клиента в согласованное время",
-    "header": "What will you get?",
-    "desc": "Увеличение клиентов среди новых туристов которые прилетают в наше страну и привлечь релокантов которые проживают здесь",
-    "titleSavings": "Time and money savings",
-    "descSavings": "Наши специалисты помогают вашему бренду с рекламой для иностранцев. Вы не тратите лишние финансы для этого.",
-    "titleEffective": "Business efficiency feedback",
-    "descEffective": "Мы помогаем вам получить максимум от бизнеса. Наши специалисты помогут выявить направления, которые интересна вашим потенциальным покупателям, и вместе с вами разработают план, как привлечь больше покупателей."
+  "Second_Page": {
+    "FirstBlock": {
+      "header": "Partners where you can purchase our cards"
+    },
+    "SecondBlock": {
+      "header": "Partners where you can get discounts on our cards"
+    }
   }
 }

@@ -1,6 +1,7 @@
 import { PartnerType, partnersData } from "./data/partners.data";
 import PartnersSLider from "./components/partners-sliders/partners.slider";
 import "./partners.styles.css";
+import { useTranslations } from "next-intl";
 
 const Partners = () => {
   const { categories, partners, isCategoryEmpty, returnSortedPartners } =
@@ -11,10 +12,11 @@ const Partners = () => {
   const partnersTypeCard = partners.filter(
     (partner) => partner.type === PartnerType.card
   );
+  const t = useTranslations("Second_Page");
   return (
     <section>
       <h1 className="md:text-4xl text-2xl font-bold text-center md:py-6 pt-2">
-        Партнеры где вы можете приобрести наши карты
+        {t("FirstBlock.header")}
       </h1>
       {categories.map((category) =>
         isCategoryEmpty(category.id, partnersTypeCard) ? (
@@ -31,7 +33,7 @@ const Partners = () => {
         ) : undefined
       )}
       <h1 className="md:text-4xl text-2xl font-bold text-center md:py-6 pt-2">
-        Партнеры где вы можете получить скидки по нашим картам
+        {t("SecondBlock.header")}
       </h1>
       {categories.map((category) =>
         isCategoryEmpty(category.id, partnersTypeDiscount) ? (
