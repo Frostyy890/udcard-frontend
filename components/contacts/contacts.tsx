@@ -12,7 +12,7 @@ const Contacts = () => {
   return (
     <section id="contacts" className="border-t-2">
       <div className="py-[11.25rem] px-4 text-center mx-auto">
-        <h1 className="md:text-4xl text-2xl font-bold">+998 33 001 28 88</h1>
+        <h1 className="md:text-4xl text-2xl font-bold">+99894 673-99-99</h1>
         <h1 className="md:text-4xl text-2xl font-bold">UDCard@gmail.com</h1>
         <p className="md:text-lg text-base text-light my-10">
           Tashkent. Labzak 2A
@@ -21,13 +21,16 @@ const Contacts = () => {
           <Link href="#facebook">
             <FacebookOutlinedIcon sx={defaultIconSize} />
           </Link>
-          <Link href="#instagram">
+          <Link
+            href="https://www.instagram.com/udcard?igsh=NjA1cWd6cmIzZGN1"
+            target="_blank"
+          >
             <InstagramIcon sx={defaultIconSize} />
           </Link>
           <Link href="#telegram">
             <TelegramIcon sx={defaultIconSize} />
           </Link>
-          <Link href="#998330012888">
+          <Link href="#998946739999">
             <PhoneInTalkIcon sx={defaultIconSize} />
           </Link>
         </div>

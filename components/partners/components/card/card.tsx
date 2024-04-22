@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "@/i18n";
 import { Partner } from "../../data/partners.data";
+import { useTranslations } from "next-intl";
 
 interface CardProps {
   cardContent: Partner;
@@ -9,6 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ cardContent }) => {
   const { img, name, description, discount, link } = cardContent;
+  const t = useTranslations("Second_Page.Card");
   return (
     <div className="bg-white border border-gray-200 shadow mx-auto overflow-hidden">
       <Link href={link ? link : "/partners"}>
@@ -23,7 +25,7 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
       <div className="p-5">
         {discount <= 0 ? undefined : (
           <div className="mb-2 w-full bg-red-800 py-1 rounded-md text-center text-lg border font-medium text-gray-100">
-            Discount {discount}% OFF
+            {t("discount", { discount })}
           </div>
         )}
         <Link href="#">
@@ -36,7 +38,7 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
         </p>
         <Link href="/link">
           <div className="flex text-sm font-light items-center justify-end pb-2">
-            Узнать больше
+            {t("learnBtn")}
             <span>
               <ArrowLeftIcon />
             </span>

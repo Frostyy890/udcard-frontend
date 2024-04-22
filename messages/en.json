@@ -36,6 +36,10 @@
     },
     "SecondBlock": {
       "header": "Partners where you can get discounts on our cards"
+    },
+    "Card": {
+      "learnBtn": "Learn more",
+      "discount": "Discount {discount}% OFF"
     }
   }
 }
