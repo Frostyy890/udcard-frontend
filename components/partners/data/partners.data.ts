@@ -33,7 +33,7 @@ import fauusLogo from "@/public/assets/logo_2/одежда/Fauus.png";
 import mursakLogo from "@/public/assets/logo_2/одежда/Mursak-1.png";
 import shadiLogo from "@/public/assets/logo_2/одежда/image_2024-04-22_21-37-44.png";
 import uyatLogo from "@/public/assets/logo_2/одежда/image_2024-04-22_17-54-32.png";
-import adraschiLogo from "@/public/assets/logo_2/одежда/123 (1).png";
+import adraschiLogo from "@/public/assets/logo_2/одежда/Adraschi.png";
 import sevenSFiveLogo from "@/public/assets/logo_2/одежда/7`s.png";
 // import retailLogo from "@/public/assets/IMG_4005.png";
 
