@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
     cardContent;
   const t = useTranslations("Second_Page.Card");
   return (
-    <div className="bg-white border border-gray-200 shadow mx-auto overflow-hidden md:max-w-[360px] max-w-[310px]">
+    <div className="bg-white border border-gray-200 shadow mx-auto overflow-hidden md:max-w-[360px] max-w-[300px] rounded-md">
       <Link href={link ? link : "/partners"}>
         <div className="h-48 md:h-60 relative">
           <Image

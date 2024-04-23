@@ -18,9 +18,9 @@ export const customSliderOptions: SwiperOptions = {
       slidesPerView: 2,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
-    960: {
+    912: {
       slidesPerView: 3,
     },
     1296: {

@@ -19,7 +19,7 @@ import tkxLogo from "@/public/assets/logo_2/ресторан/tkx.png";
 import kissLogo from "@/public/assets/logo_2/ресторан/Logo_hd_RED.png";
 import cucucinaLogo from "@/public/assets/CuCucina_Logo_Full.png";
 import ronniLogo from "@/public/assets/logo_2/ресторан/image_2024-04-22_21-19-39.png";
-import zeugmaLogo from "@/public/assets/logo_2/ресторан/Zeugma_Kunefe.png";
+import zeugmaLogo from "@/public/assets/logo_2/ресторан/ZG.png";
 import velvetLogo from "@/public/assets/logo_2/ресторан/ЛОГО_VELVET_ЗОЛОТО_ТЕКСТУРА_НА_З.png";
 import silkLogo from "@/public/assets/logo_2/ресторан/image_2024-04-22_17-59-30.png";
 import theRoseLogo from "@/public/assets/logo_2/ресторан/The-Rose-logo.png";
@@ -28,13 +28,13 @@ import ronni2Logo from "@/public/assets/logo_2/ресторан/Ronni.png";
 
 //RETAIL
 import azukarLogo from "@/public/assets/logo_2/одежда/Azukar_moreno.jpg";
-import chemodanLogo from "@/public/assets/logo_2/одежда/ChemodanUZ.png";
+import chemodanLogo from "@/public/assets/logo_2/одежда/chemodan.png";
 import fauusLogo from "@/public/assets/logo_2/одежда/Fauus.png";
 import mursakLogo from "@/public/assets/logo_2/одежда/Mursak-1.png";
 import shadiLogo from "@/public/assets/logo_2/одежда/image_2024-04-22_21-37-44.png";
 import uyatLogo from "@/public/assets/logo_2/одежда/image_2024-04-22_17-54-32.png";
-import adraschiLogo from "@/public/assets/logo_2/одежда/adraschi.png";
-import sevenSFiveLogo from "@/public/assets/logo_2/одежда/7`s5.png";
+import adraschiLogo from "@/public/assets/logo_2/одежда/123 (1).png";
+import sevenSFiveLogo from "@/public/assets/logo_2/одежда/7`s.png";
 // import retailLogo from "@/public/assets/IMG_4005.png";
 
 interface Category {
