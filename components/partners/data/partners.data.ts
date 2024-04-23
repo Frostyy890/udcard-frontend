@@ -46,17 +46,18 @@ interface Category {
 
 export interface Partner {
   id: number;
-  img?: StaticImageData;
+  img: StaticImageData;
   name: string;
   description: string;
   discount: number;
+  discountMessage?: string;
   link?: string;
   categoryId: number;
-  type?: PartnerType;
+  type: PartnerType;
 }
 
 export enum PartnerType {
-  discount = "Партнер со скидками",
+  discount = "Партнеры со скидками",
   card = "Партнеры с нашими картами",
 }
 
@@ -148,7 +149,8 @@ export const partnersData: PartnersData = {
       name: "Bootlegger",
       img: bootlegerLogo,
       description: "Дается резиденство по карте",
-      discount: 5,
+      discount: 0,
+      discountMessage: "Residence",
       categoryId: 5,
       link: "https://www.instagram.com/bootleggerbar.uz?igsh=MXB2Y2s3cWp0NnFx",
       type: PartnerType.discount,

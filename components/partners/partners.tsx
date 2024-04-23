@@ -1,3 +1,4 @@
+import React from "react";
 import { PartnerType, partnersData } from "./data/partners.data";
 import PartnersSLider from "./components/partners-sliders/partners.slider";
 import "./partners.styles.css";
@@ -24,7 +25,7 @@ const Partners = () => {
             <p className="md:text-3xl text-xl font-bold text-center py-8">
               {category.name}
             </p>
-            <div className="max-w-[1920px] mx-auto">
+            <div className="w-full mx-auto">
               <PartnersSLider
                 partners={returnSortedPartners(category.id, partnersTypeCard)}
               />
@@ -41,7 +42,7 @@ const Partners = () => {
             <p className="md:text-3xl text-xl font-bold text-center py-8">
               {category.name}
             </p>
-            <div className="w-full">
+            <div className="w-full mx-auto">
               <PartnersSLider
                 partners={returnSortedPartners(
                   category.id,

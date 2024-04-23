@@ -9,7 +9,8 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ cardContent }) => {
-  const { img, name, description, discount, link } = cardContent;
+  const { img, name, description, discount, link, discountMessage } =
+    cardContent;
   const t = useTranslations("Second_Page.Card");
   return (
     <div className="bg-white border border-gray-200 shadow mx-auto overflow-hidden md:max-w-[360px] max-w-[310px]">
@@ -19,6 +20,7 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
             src={img ? img : ""}
             alt=""
             className="bg-cover h-full w-full"
+            loading="lazy"
           />
         </div>
       </Link>
@@ -26,6 +28,11 @@ const Card: React.FC<CardProps> = ({ cardContent }) => {
         {discount <= 0 ? undefined : (
           <div className="mb-2 w-full bg-red-800 py-1 rounded-md text-center text-lg border font-medium text-gray-100">
             {t("discount", { discount })}
+          </div>
+        )}
+        {discountMessage && (
+          <div className="mb-2 w-full bg-black py-1 rounded-md text-center text-lg border font-medium text-gray-100">
+            {discountMessage}
           </div>
         )}
         <Link href="#">
