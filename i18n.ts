@@ -10,7 +10,6 @@ export const { Link, redirect, usePathname, useRouter } =
   createSharedPathnamesNavigation({ locales, localePrefix });
 
 export default getRequestConfig(async ({ locale }) => {
-  // const baseLocale = new Intl.Locale(locale).baseName;
   if (!locales.includes(locale)) notFound();
   return {
     messages: (await import(`./messages/${locale}.json`)).default,

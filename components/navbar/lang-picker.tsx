@@ -7,7 +7,6 @@ import { useLocale } from "next-intl";
 import { useClickOutside } from "@/hooks/useClickOutside";
 
 const LangPicker = () => {
-  
   const pathname = usePathname();
   const currentlocale = useLocale();
   const languages: string[] = locales.map((loc) => loc.toUpperCase());

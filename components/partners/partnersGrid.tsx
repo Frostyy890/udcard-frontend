@@ -1,12 +1,11 @@
 import React from "react";
 import { PartnerType, partnersData } from "./data/partners.data";
 import PartnersSLider from "./components/partners-sliders/partners.slider";
-import "./partners.styles.css";
 import { useTranslations } from "next-intl";
+import { isCategoryEmpty, returnSortedPartners } from "./utils/index";
 
-const Partners = () => {
-  const { categories, partners, isCategoryEmpty, returnSortedPartners } =
-    partnersData;
+const PartnersGrid = () => {
+  const { categories, partners } = partnersData;
   const partnersTypeDiscount = partners.filter(
     (partner) => partner.type === PartnerType.discount
   );
@@ -57,4 +56,4 @@ const Partners = () => {
   );
 };
 
-export default Partners;
+export default PartnersGrid;

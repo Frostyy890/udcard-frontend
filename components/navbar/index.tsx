@@ -4,7 +4,6 @@ import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { translateSectionsToRu } from "./navbar.data";
-import "./navbar.styles.css";
 import LangPicker from "./lang-picker";
 import { useLocale } from "next-intl";
 
@@ -42,7 +41,9 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-2">
           <LangPicker />
           <div
-            className={`md:hidden hamburger ${isOpen ? "open" : ""}`}
+            className={`md:hidden transition-transform duration-300 ease-in-out ${
+              isOpen ? "transform rotate-90" : ""
+            }`}
             onClick={handleNavOpen}
           >
             {isOpen ? (

@@ -64,8 +64,6 @@ export enum PartnerType {
 export interface PartnersData {
   categories: Category[];
   partners: Partner[];
-  isCategoryEmpty: (categoryId: number, partners: Partner[]) => boolean;
-  returnSortedPartners: (categoryId: number, partners: Partner[]) => Partner[];
 }
 
 export const partnersData: PartnersData = {
@@ -393,13 +391,4 @@ export const partnersData: PartnersData = {
       type: PartnerType.discount,
     },
   ],
-  isCategoryEmpty(categoryId: number, partners: Partner[]): boolean {
-    return partners.some((partner) => partner.categoryId === categoryId);
-  },
-  returnSortedPartners(categoryId: number, partners: Partner[]) {
-    const sortedPartners = partners.filter(
-      (partner) => partner.categoryId === categoryId
-    );
-    return sortedPartners;
-  },
 };

@@ -2,7 +2,7 @@ import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 import SavingsIcon from "@mui/icons-material/Savings";
 import PriceCheckIcon from "@mui/icons-material/PriceCheck";
 import { useTranslations } from "next-intl";
-import { descCard } from "../whyus/whyus";
+import { descCard } from "../whyus";
 
 const Services = () => {
   const defaultIconSize = { fontSize: "5rem" };

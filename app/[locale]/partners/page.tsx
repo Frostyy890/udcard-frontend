@@ -1,5 +1,5 @@
-import Contacts from "@/components/contacts/contacts";
-import PartnersGrid from "@/components/partners/partners";
+import Contacts from "@/components/contacts";
+import PartnersGrid from "@/components/partners/partnersGrid";
 
 const Partners = () => {
   return (

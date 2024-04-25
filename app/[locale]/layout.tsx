@@ -3,7 +3,7 @@ import { Montserrat } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { notFound } from "next/navigation";
 import { defaultLocale, locales } from "../../i18n";
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/navbar";
 // STYLES
 import "./globals.css";
 import "swiper/css/bundle";

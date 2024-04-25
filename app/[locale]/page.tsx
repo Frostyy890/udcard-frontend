@@ -1,9 +1,9 @@
-import About from "@/components/about/about";
-import Contacts from "@/components/contacts/contacts";
-import Home from "@/components/home/home";
-import PartnersDemo from "@/components/partners/partners.demo";
-import Services from "@/components/services/services";
-import WhyUs from "@/components/whyus/whyus";
+import About from "@/components/about";
+import Contacts from "@/components/contacts";
+import Home from "@/components/home";
+import PartnersDemo from "@/components/partners/partnersDemo";
+import Services from "@/components/services";
+import WhyUs from "@/components/whyus";
 
 const App = () => {
   return (
