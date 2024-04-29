@@ -31,7 +31,7 @@ export default function RootLayout(props: Props) {
             <Navbar />
             {children}
           </main> */}
-          <div>Under maintainance: где деньги Лебовски?</div>
+          <div>404: Not Found</div>
         </body>
       </NextIntlClientProvider>
     </html>
