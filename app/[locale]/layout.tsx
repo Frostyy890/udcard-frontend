@@ -31,7 +31,7 @@ export default function RootLayout(props: Props) {
             <Navbar />
             {children}
           </main> */}
-          <div>Under maintainance</div>
+          <div>Under maintainance: где деньги Лебовски?</div>
         </body>
       </NextIntlClientProvider>
     </html>
