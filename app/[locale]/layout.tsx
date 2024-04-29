@@ -27,10 +27,11 @@ export default function RootLayout(props: Props) {
     <html lang={params.locale || defaultLocale}>
       <NextIntlClientProvider messages={messages}>
         <body className={montserrat.className}>
-          <main className="w-full h-full mt-16 bg-gray-200 text-gray-900">
+          {/* <main className="w-full h-full mt-16 bg-gray-200 text-gray-900">
             <Navbar />
             {children}
-          </main>
+          </main> */}
+          <div>Under maintainance</div>
         </body>
       </NextIntlClientProvider>
     </html>
